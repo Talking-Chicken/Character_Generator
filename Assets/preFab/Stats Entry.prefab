@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776238509990256377}
   - component: {fileID: 1776238509990256376}
-  - component: {fileID: 1283503238}
+  - component: {fileID: 1283503239}
   m_Layer: 5
   m_Name: Stats Entry
   m_TagString: Untagged
@@ -144,32 +144,24 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!61 &1283503238
-BoxCollider2D:
+--- !u!114 &1283503239
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776238509990256382}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 13.03, y: -0.0000038146973}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 197.63664, y: 49.485756}
-  m_EdgeRadius: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 595020fcefe83ec4a8f365347f7ca06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statValue:
+    statName: 
+    statValue: 0
+    maxValue: 0
+  statValueText: {fileID: 1776238510009194202}
+  statNameText: {fileID: 1776238510321943477}
 --- !u!1 &1776238510009194200
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +681,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206529, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_Name
+      value: Plus Sign
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1283503239}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: addValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StatsEntry, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514264206541, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3117435514264206542, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -705,6 +729,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592458, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_Name
+      value: Minus Sign
+      objectReference: {fileID: 0}
     - target: {fileID: 3117435514356592459, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -720,6 +748,34 @@ PrefabInstance:
     - target: {fileID: 3117435514356592459, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1283503239}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: subtractValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: StatsEntry, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3117435514356592470, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a3a1e3c5f0b095478a0061270ea8350, type: 3}
