@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47965415567038787}
   - component: {fileID: 47965415567038786}
+  - component: {fileID: 25002875}
   m_Layer: 5
   m_Name: Inventory Entry
   m_TagString: Untagged
@@ -143,6 +144,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &25002875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47965415567038788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4984884d108a2964a9e50d15d7e79c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemNameText: {fileID: 1876778949736858689}
 --- !u!1 &47965417113706971
 GameObject:
   m_ObjectHideFlags: 0
